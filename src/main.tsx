@@ -10,6 +10,8 @@ import Salam from "./pages/salam/Salam.tsx";
 import Mempelai from "./pages/mempelai/Mempelai.tsx";
 import Akad from "./pages/akad/Akad.tsx";
 import Maps from "./pages/maps/Maps.tsx";
+import MapView from "./pages/maps/MapView.tsx";
+import Counting from "./pages/counting/Counting.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -28,7 +30,7 @@ createRoot(document.getElementById("root")!).render(
               <Route path="akad" element={<Akad />} />
               {/* <Route path="resepsi" element={<Salam />} /> */}
               <Route path="maps" element={<Maps />} />
-              <Route path="counting" element={<Salam />} />
+              <Route path="counting" element={<Counting />} />
               <Route path="rsvp" element={<Salam />} />
               <Route path="gallery" element={<Salam />} />
               <Route path="thanks" element={<Salam />} />

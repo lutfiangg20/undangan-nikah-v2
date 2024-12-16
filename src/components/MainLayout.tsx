@@ -46,7 +46,7 @@ const MainLayout = () => {
       </div>
       <footer
         ref={parentRef}
-        className="absolute bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-background  overflow-hidden"
+        className="z-[400] absolute bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-background overflow-hidden"
       >
         {paths.map((path, index) => (
           <Link to={path.link} key={index}>
