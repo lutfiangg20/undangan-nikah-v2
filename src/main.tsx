@@ -20,21 +20,21 @@ createRoot(document.getElementById("root")!).render(
       <div className="bg-[#260f0f]">
         <BrowserRouter>
           <Routes>
-            <Route index element={<App />} />
+            <Route path="/:id" element={<Opening />} />
             {/* <Route path="about" element={<About />} /> */}
 
-            <Route element={<MainLayout />}>
-              <Route path="opening" element={<Opening />} />
-              <Route path="salam" element={<Salam />} />
-              <Route path="mempelai" element={<Mempelai />} />
-              <Route path="akad" element={<Akad />} />
-              {/* <Route path="resepsi" element={<Salam />} /> */}
-              <Route path="maps" element={<Maps />} />
-              <Route path="counting" element={<Counting />} />
-              <Route path="rsvp" element={<Salam />} />
-              <Route path="gallery" element={<Salam />} />
-              <Route path="thanks" element={<Salam />} />
-            </Route>
+            {/* <Route element={<MainLayout />}> */}
+            {/*   <Route path="/:id" element={<Opening />} /> */}
+            {/*   <Route path="salam" element={<Salam />} /> */}
+            {/*   <Route path="mempelai" element={<Mempelai />} /> */}
+            {/*   <Route path="akad" element={<Akad />} /> */}
+            {/*   {/* <Route path="resepsi" element={<Salam />} /> */}
+            {/*   <Route path="maps" element={<Maps />} /> */}
+            {/*   <Route path="counting" element={<Counting />} /> */}
+            {/*   <Route path="rsvp" element={<Salam />} /> */}
+            {/*   <Route path="gallery" element={<Salam />} /> */}
+            {/*   <Route path="thanks" element={<Salam />} /> */}
+            {/* </Route> */}
           </Routes>
         </BrowserRouter>
       </div>
