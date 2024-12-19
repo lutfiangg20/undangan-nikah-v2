@@ -30,7 +30,7 @@ const OpeningContent = () => {
         <motion.h2
           animate={{ y: [100, 0] }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-          className="text-3xl"
+          className="text-3xl capitalize"
         >
           {id}
         </motion.h2>
