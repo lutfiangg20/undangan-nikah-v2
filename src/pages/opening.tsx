@@ -7,6 +7,8 @@ import { useLocation, useParams } from "react-router";
 import OpeningContent from "./OpeningContent";
 import path from "path";
 import NewMainLayout from "@/components/NewMainLayout";
+import { Button } from "@/components/ui/button";
+import MusicPlayer from "@/components/MusicPlayer";
 
 const Opening = () => {
   const [selectedMenu, setSelectedMenu] = useState("opening");
@@ -56,6 +58,8 @@ const Opening = () => {
           }
         })}
       </div>
+
+      <MusicPlayer />
       <footer
         ref={parentRef}
         className="z-[400] absolute bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-background overflow-hidden"
@@ -65,7 +69,7 @@ const Opening = () => {
             onClick={() => handleSelectMenu(path.name)}
             key={index}
             style={{ transition: "all 0.2s ease-in-out" }}
-            className={`w-20 h-20 p-4 ${selectedMenu.toLowerCase().includes(path.name.toLowerCase()) ? "bg-accent" : ""} rounded-xl flex flex-col gap-2 items-center`}
+            className={` h-20 p-4 ${selectedMenu.toLowerCase().includes(path.name.toLowerCase()) ? "bg-accent" : ""} rounded-xl flex flex-col gap-2 items-center`}
           >
             {path.icon}
             <Label className="text-nowrap">{path.name}</Label>

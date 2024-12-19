@@ -4,6 +4,7 @@ import { ScrollText } from "lucide-react";
 import { ReactNode, useEffect, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
 import { menuList } from "./menuList";
+import MusicPlayer from "./MusicPlayer";
 
 type Props = {
   children: ReactNode;
