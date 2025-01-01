@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     {/* <RouterProvider router={router} /> */}
     <ThemeProvider>
-      <div className="bg-[#260f0f]">
+      <div className="bg-[#f7ebd2] text-[#614306]">
         <BrowserRouter>
           <Routes>
             <Route path="/:id" element={<Opening />} />
