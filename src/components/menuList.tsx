@@ -1,5 +1,6 @@
 import Akad from "@/pages/akad/Akad";
 import Counting from "@/pages/counting/Counting";
+import Gallery from "@/pages/gallery/Gallery";
 import Maps from "@/pages/maps/Maps";
 import Mempelai from "@/pages/mempelai/Mempelai";
 import OpeningContent from "@/pages/OpeningContent";
@@ -73,7 +74,7 @@ export const menuList: Path[] = [
     icon: <ScrollText />,
     link: "/gallery",
 
-    component: <OpeningContent />,
+    component: <Gallery />,
   },
   {
     name: "Thanks",

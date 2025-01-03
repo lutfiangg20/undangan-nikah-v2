@@ -33,7 +33,7 @@ const Akad = () => {
               className="text-right col-span-5"
             >
               <p>AKAD</p>
-              <p className="text-nowrap">PUKUL 08.00 - 11.00 WIB</p>
+              <p className="">PUKUL 08.00 - 11.00 WIB</p>
             </motion.div>
             <motion.div
               animate={{ opacity: [0, 1] }}
@@ -49,7 +49,7 @@ const Akad = () => {
               className="text-left col-span-5"
             >
               <p>RESEPSI</p>
-              <p className="text-nowrap">PUKUL 13.00 - 20.00 WIB</p>
+              <p className="">PUKUL 13.00 - 20.00 WIB</p>
             </motion.div>
           </div>
           <motion.p
