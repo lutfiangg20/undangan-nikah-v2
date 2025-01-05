@@ -9,8 +9,8 @@ const Gallery = () => {
           if (i === 4)
             return (
               <motion.img
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
                 key={i}
                 src={`/remini1crop.jpg`}
@@ -20,8 +20,8 @@ const Gallery = () => {
           if (i === 3)
             return (
               <motion.img
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
                 key={i}
                 src={`/remini6.jpg`}
@@ -30,8 +30,8 @@ const Gallery = () => {
             );
           return (
             <motion.img
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
               key={i}
               src={`/remini${i + 2}.jpg`}

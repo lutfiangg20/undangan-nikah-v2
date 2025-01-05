@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import MusicPlayer from "@/components/MusicPlayer";
 
 import { Carousel, CarouselContent } from "@/components/ui/carousel";
+import MainContent from "./MainContent";
 
 const Opening = () => {
   const [selectedMenu, setSelectedMenu] = useState("opening");
@@ -23,7 +24,7 @@ const Opening = () => {
     if (parent) {
       // Cari elemen aktif dengan class "bg-accent"
       const activeElement = parent.querySelector(
-        ".bg-accent",
+        ".bg-gray-800",
       ) as HTMLDivElement | null;
 
       if (activeElement) {
@@ -53,18 +54,18 @@ const Opening = () => {
 
   return (
     <NewMainLayout>
-      <div className="w-full">
-        {paths.map((path) => {
+      <main className="w-full">
+        {paths.map((path, index) => {
           if (path.name.toLowerCase() === selectedMenu.toLowerCase()) {
-            return path.component;
+            return <MainContent children={path.component} key={index} />;
           }
         })}
-      </div>
+      </main>
 
       <MusicPlayer />
       <footer
         ref={parentRef}
-        className="z-[400] absolute bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-background overflow-hidden"
+        className="z-[400] fixed  bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-background overflow-hidden"
       >
         <Carousel className="w-full">
           <CarouselContent>
@@ -73,7 +74,11 @@ const Opening = () => {
                 onClick={() => handleSelectMenu(path.name)}
                 key={index}
                 style={{ transition: "all 0.2s ease-in-out" }}
-                className={` h-20 p-4 ${selectedMenu.toLowerCase().includes(path.name.toLowerCase()) ? "bg-accent" : ""} rounded-xl flex flex-col gap-2 items-center`}
+                className={` 
+                  h-20 p-4 ${selectedMenu.toLowerCase().includes(path.name.toLowerCase()) ? "bg-gray-800" : ""} 
+                  rounded-xl 
+                  flex 
+                  flex-col gap-2 items-center`}
               >
                 {path.icon}
                 <Label className="text-nowrap">{path.name}</Label>

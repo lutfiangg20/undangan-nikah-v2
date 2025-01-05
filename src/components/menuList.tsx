@@ -5,6 +5,7 @@ import Maps from "@/pages/maps/Maps";
 import Mempelai from "@/pages/mempelai/Mempelai";
 import OpeningContent from "@/pages/OpeningContent";
 import Salam from "@/pages/salam/Salam";
+import Wishes from "@/pages/wishes/Wishes";
 import { ScrollText } from "lucide-react";
 import { ReactNode } from "react";
 
@@ -75,6 +76,12 @@ export const menuList: Path[] = [
     link: "/gallery",
 
     component: <Gallery />,
+  },
+  {
+    name: "Wishes",
+    icon: <ScrollText />,
+    link: "/wishes",
+    component: <Wishes />,
   },
   {
     name: "Thanks",

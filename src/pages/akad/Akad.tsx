@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 const Akad = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-y-hidden">
       <div className="absolute -inset-10 bg-black opacity-10  bg-[url('/remini1.jpg')] bg-cover" />
       <div className="flex flex-col items-center space-y-10 h-screen justify-center">
         <motion.p
