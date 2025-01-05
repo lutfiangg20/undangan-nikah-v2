@@ -1,13 +1,7 @@
-import MainLayout from "@/components/MainLayout";
 import { menuList } from "@/components/menuList";
 import { Label } from "@/components/ui/label";
-import { motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useLocation, useParams } from "react-router";
-import OpeningContent from "./OpeningContent";
-import path from "path";
 import NewMainLayout from "@/components/NewMainLayout";
-import { Button } from "@/components/ui/button";
 import MusicPlayer from "@/components/MusicPlayer";
 
 import { Carousel, CarouselContent } from "@/components/ui/carousel";

@@ -1,17 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.tsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 import Opening from "./pages/opening.tsx";
-import MainLayout from "./components/MainLayout.tsx";
 import { ThemeProvider } from "./components/ThemeProvider.tsx";
-import Salam from "./pages/salam/Salam.tsx";
-import Mempelai from "./pages/mempelai/Mempelai.tsx";
-import Akad from "./pages/akad/Akad.tsx";
-import Maps from "./pages/maps/Maps.tsx";
-import MapView from "./pages/maps/MapView.tsx";
-import Counting from "./pages/counting/Counting.tsx";
 import { createClient } from "@supabase/supabase-js";
 
 const SUPABASE_KEY =

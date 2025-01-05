@@ -1,16 +1,5 @@
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { createClient } from "@supabase/supabase-js";
-import { useState, useEffect, useMemo } from "react";
-import { form } from "motion/react-client";
+import { useState, useEffect } from "react";
 import FormWish from "./FormWish";
 import { supabase } from "@/main";
 import { motion } from "motion/react";
@@ -70,7 +59,7 @@ const Wishes = () => {
     if (currentPage === 1) return;
     const prevPage = currentIndex - 4;
     const newData = datas.filter(
-      (data, index) => index >= prevPage && index < currentIndex,
+      (_, index) => index >= prevPage && index < currentIndex,
     );
     setFilterData(newData);
     setCurrentPage(currentPage - 1);

@@ -1,6 +1,5 @@
-import { Link, Outlet, Path, useLocation } from "react-router";
+import { Link, Outlet, useLocation } from "react-router";
 import { Label } from "./ui/label";
-import { ScrollText } from "lucide-react";
 import { useEffect, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
 import { menuList } from "./menuList";

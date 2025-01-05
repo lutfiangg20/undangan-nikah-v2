@@ -1,10 +1,4 @@
-import { Link, Outlet, Path, useLocation } from "react-router";
-import { Label } from "./ui/label";
-import { ScrollText } from "lucide-react";
-import { ReactNode, useEffect, useMemo, useRef } from "react";
-import { motion } from "framer-motion";
-import { menuList } from "./menuList";
-import MusicPlayer from "./MusicPlayer";
+import { ReactNode } from "react";
 import corner from "/Asset 2.png";
 
 type Props = {

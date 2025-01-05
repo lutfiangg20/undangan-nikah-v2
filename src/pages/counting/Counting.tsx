@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import CountColumn from "./CountColumn";
 import { motion } from "motion/react";
 
