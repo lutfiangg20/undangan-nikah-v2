@@ -1,0 +1,5 @@
+
+curl 'https://ecjkzlhhkotazijwwkfp.supabase.co/rest/v1/wishes?select=*' \
+-H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVjamt6bGhoa290YXppand3a2ZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYwODg0MDEsImV4cCI6MjA1MTY2NDQwMX0.iZ1fg3zBQoFxBo450qiNXamQVH9WLE3GM40KlIWTcW0" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVjamt6bGhoa290YXppand3a2ZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYwODg0MDEsImV4cCI6MjA1MTY2NDQwMX0.iZ1fg3zBQoFxBo450qiNXamQVH9WLE3GM40KlIWTcW0"
+          
