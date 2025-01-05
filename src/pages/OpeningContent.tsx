@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 
 const OpeningContent = () => {
   const { id } = useParams();
+  console.log("id", id);
   return (
     <div className=" flex h-screen items-center justify-center">
       <motion.div className="text-center space-y-5">
