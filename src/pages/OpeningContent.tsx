@@ -5,7 +5,7 @@ const OpeningContent = () => {
   const { id } = useParams();
   const newId = id?.replace(/-/g, " ");
   return (
-    <div className=" flex h-screen items-center justify-center">
+    <div className=" flex h-screen mt-52 justify-center">
       <motion.div className="text-center space-y-5">
         <motion.h3
           animate={{ y: [-100, 0] }}
