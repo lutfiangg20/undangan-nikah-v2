@@ -61,7 +61,7 @@ const Opening = () => {
         ref={parentRef}
         className="z-[400] fixed  bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-background overflow-hidden"
       >
-        <Carousel className="w-full">
+        <Carousel className="w-full flex justify-center">
           <CarouselContent>
             {paths.map((path, index) => (
               <button

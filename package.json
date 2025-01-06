@@ -1,5 +1,6 @@
 {
   "name": "undangan-nikah-v2",
+  "homepage": "https://lutfiangg20.github.io/undangan-nikah-v2/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
