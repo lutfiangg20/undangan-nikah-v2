@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import Opening from "./pages/opening.tsx";
 import { ThemeProvider } from "./components/ThemeProvider.tsx";
 import { createClient } from "@supabase/supabase-js";
@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")!).render(
     {/* <RouterProvider router={router} /> */}
     <ThemeProvider>
       <div className="bg-[#f7ebd2] text-[#614306]">
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/:id" element={<Opening />} />
             {/* <Route path="about" element={<About />} /> */}
@@ -34,7 +34,7 @@ createRoot(document.getElementById("root")!).render(
             {/*   <Route path="thanks" element={<Salam />} /> */}
             {/* </Route> */}
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </ThemeProvider>
   </StrictMode>,

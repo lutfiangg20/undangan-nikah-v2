@@ -1,11 +1,12 @@
 // import foto from "/remini1.jpg";
 // import foto2 from "/remini5.jpg";
 import { motion } from "motion/react";
-import foto3 from "/remini8.jpg";
+import kiri from "/remini8kiri.jpg";
+import kanan from "/remini8kanan.jpg";
 
 const Mempelai = () => {
   return (
-    <div className="space-y-10 overflow-x-hidden mt-10">
+    <div className="space-y-10 overflow-x-hidden mt-16">
       <div className="w-full grid grid-cols-12 gap-5">
         <motion.div
           animate={{ x: [-100, 0], opacity: [0, 1] }}
@@ -13,8 +14,8 @@ const Mempelai = () => {
           className="col-span-6  rounded-md overflow-hidden"
         >
           <img
-            src={foto3}
-            className="translate-x-8 translate-y-16 scale-[1.90] "
+            src={kiri}
+            // className="translate-x-8 translate-y-16 scale-[1.90] "
             alt="Salam"
           />
         </motion.div>
@@ -46,8 +47,8 @@ const Mempelai = () => {
           className="col-span-6 rounded-md overflow-hidden"
         >
           <img
-            src={foto3}
-            className="-translate-x-[4.5rem] translate-y-16 scale-[1.90] "
+            src={kanan}
+            // className="-translate-x-[4.5rem] translate-y-16 scale-[1.90] "
             alt="Salam"
           />
         </motion.div>
