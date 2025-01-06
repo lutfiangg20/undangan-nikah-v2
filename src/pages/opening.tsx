@@ -59,7 +59,7 @@ const Opening = () => {
       <MusicPlayer />
       <footer
         ref={parentRef}
-        className="z-[400] fixed  bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-background overflow-hidden"
+        className="z-[400] fixed  bottom-0 left-0 w-full rounded-b-xl p-1 flex gap-5 bg-[#140e0d] overflow-hidden text-[#c9998d]"
       >
         <Carousel className="w-full flex justify-center">
           <CarouselContent>
@@ -68,10 +68,10 @@ const Opening = () => {
                 onClick={() => handleSelectMenu(path.name)}
                 key={index}
                 style={{ transition: "all 0.2s ease-in-out" }}
-                className={` 
+                className={`
                   h-20 p-4 ${selectedMenu.toLowerCase().includes(path.name.toLowerCase()) ? "bg-gray-800" : ""} 
-                  rounded-xl 
-                  flex 
+                  rounded-xl
+                  flex
                   flex-col gap-2 items-center`}
               >
                 {path.icon}

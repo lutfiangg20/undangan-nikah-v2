@@ -1,12 +1,22 @@
 import Akad from "@/pages/akad/Akad";
 import Counting from "@/pages/counting/Counting";
 import Gallery from "@/pages/gallery/Gallery";
+import GiftContent from "@/pages/gift/GiftContent";
 import Maps from "@/pages/maps/Maps";
 import Mempelai from "@/pages/mempelai/Mempelai";
 import OpeningContent from "@/pages/OpeningContent";
 import Salam from "@/pages/salam/Salam";
 import Wishes from "@/pages/wishes/Wishes";
-import { ScrollText } from "lucide-react";
+import {
+  CalendarDays,
+  Gift,
+  Heart,
+  Images,
+  MapPinned,
+  MessageCircleMore,
+  ScrollText,
+  Timer,
+} from "lucide-react";
 import { ReactNode } from "react";
 
 export type Path = {
@@ -19,27 +29,27 @@ export type Path = {
 export const menuList: Path[] = [
   {
     name: "Opening",
-    icon: <ScrollText />,
+    icon: <ScrollText strokeWidth={3} />,
     link: "/:id",
     component: <OpeningContent />,
   },
   {
     name: "Salam",
-    icon: <ScrollText />,
+    icon: <ScrollText strokeWidth={3} />,
     link: "/salam",
 
     component: <Salam />,
   },
   {
     name: "Mempelai",
-    icon: <ScrollText />,
+    icon: <Heart strokeWidth={3} />,
     link: "/mempelai",
 
     component: <Mempelai />,
   },
   {
     name: "Akad & Resepsi",
-    icon: <ScrollText />,
+    icon: <CalendarDays strokeWidth={3} />,
     link: "/akad",
 
     component: <Akad />,
@@ -51,41 +61,41 @@ export const menuList: Path[] = [
   // },
   {
     name: "Maps",
-    icon: <ScrollText />,
+    icon: <MapPinned strokeWidth={3} />,
     link: "/maps",
 
     component: <Maps />,
   },
   {
     name: "Counting",
-    icon: <ScrollText />,
+    icon: <Timer strokeWidth={3} />,
     link: "/counting",
 
     component: <Counting />,
   },
   {
-    name: "RSVP",
-    icon: <ScrollText />,
-    link: "/rsvp",
+    name: "Gift",
+    icon: <Gift strokeWidth={3} />,
+    link: "/gift",
 
-    component: <OpeningContent />,
+    component: <GiftContent />,
   },
   {
     name: "Gallery",
-    icon: <ScrollText />,
+    icon: <Images strokeWidth={3} />,
     link: "/gallery",
 
     component: <Gallery />,
   },
   {
     name: "Wishes",
-    icon: <ScrollText />,
+    icon: <MessageCircleMore strokeWidth={3} />,
     link: "/wishes",
     component: <Wishes />,
   },
   {
     name: "Thanks",
-    icon: <ScrollText />,
+    icon: <ScrollText strokeWidth={3} />,
     link: "/thanks",
 
     component: <OpeningContent />,

@@ -5,6 +5,14 @@ import { motion } from "motion/react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const MapView = () => {
+  const toMap = () => {
+    const latitude = -8.1094833193278;
+    const longitude = 112.0749664305271;
+
+    const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+    window.open(googleMapsUrl);
+  };
+
   return (
     <div className="mt-20">
       <motion.div
@@ -37,9 +45,8 @@ const MapView = () => {
           Jl. Anggrek No.26, RT.04/RW.09, Tumpuk, Purwokerto, Kec. Srengat,
           Kabupaten Blitar, Jawa Timur 66152
         </h1>
-        <Button className="rounded-2xl" variant={"location"}>
-          {" "}
-          Petunjuk Ke Lokasi{" "}
+        <Button onClick={toMap} className="rounded-2xl" variant={"location"}>
+          Petunjuk Ke Lokasi
         </Button>
       </motion.div>
     </div>

@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 
 const OpeningContent = () => {
   const { id } = useParams();
-  console.log("id", id);
+  const newId = id?.replace(/-/g, " ");
   return (
     <div className=" flex h-screen items-center justify-center">
       <motion.div className="text-center space-y-5">
@@ -33,7 +33,7 @@ const OpeningContent = () => {
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
           className="text-3xl capitalize"
         >
-          {id}
+          {newId}
         </motion.h2>
       </motion.div>
     </div>

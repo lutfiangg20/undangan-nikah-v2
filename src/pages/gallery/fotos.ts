@@ -2,7 +2,7 @@ import foto1 from "/remini2.jpg";
 import foto2 from "/remini3.jpg";
 import foto3 from "/remini4.jpg";
 import foto4 from "/remini6.jpg";
-import foto5 from "/remini1crop.jpg";
+import foto5 from "/remini1crop2.jpg";
 import foto6 from "/remini7.jpg";
 import foto7 from "/remini8.jpg";
 import foto8 from "/remini9.jpg";

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "./ui/button";
 import { Pause, Play } from "lucide-react";
 
@@ -14,6 +14,11 @@ const MusicPlayer = () => {
       setIsPlaying(true);
     }
   };
+
+  useEffect(() => {
+    audio.play();
+    setIsPlaying(true);
+  }, []);
 
   return (
     <Button

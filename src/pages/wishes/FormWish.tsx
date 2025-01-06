@@ -41,12 +41,17 @@ const FormWish = () => {
       <Input
         placeholder="Nama"
         onChange={(e) => setFormData({ ...formData, nama: e.target.value })}
+        required
       />
       <Textarea
         placeholder="Ucapan"
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+        required
       />
-      <Select onValueChange={(e) => setFormData({ ...formData, kehadiran: e })}>
+      <Select
+        required
+        onValueChange={(e) => setFormData({ ...formData, kehadiran: e })}
+      >
         <SelectTrigger className="">
           <SelectValue placeholder="Konfirmasi Kehadiran" />
         </SelectTrigger>
