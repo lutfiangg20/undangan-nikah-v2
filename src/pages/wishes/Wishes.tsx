@@ -23,7 +23,6 @@ const Wishes = () => {
       .select("*")
       .order("created_at", { ascending: false });
     if (data) {
-      console.log("initial data", data);
       setDatas(data);
     }
   };
