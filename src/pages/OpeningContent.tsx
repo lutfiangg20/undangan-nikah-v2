@@ -26,7 +26,7 @@ const OpeningContent = () => {
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
         >
           <h3 className="text-2xl">Kepada Yth:</h3>
-          <h3 className="text-2xl">bapak/Ibu/Saudara/i</h3>
+          <h3 className="text-2xl">Bapak/Ibu/Saudara/i</h3>
         </motion.div>
         <motion.h2
           animate={{ y: [100, 0] }}
