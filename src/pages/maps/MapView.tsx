@@ -14,7 +14,7 @@ const MapView = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 font-serif">
       <motion.div
         animate={{ y: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 2, ease: "easeInOut", type: "spring" }}

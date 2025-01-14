@@ -3,7 +3,7 @@ import foto from "/remini4.jpg";
 
 const Salam = () => {
   return (
-    <div className="flex justify-center">
+    <div className="font-serif flex justify-center">
       <div className="space-y-10 ">
         <motion.div
           animate={{ y: [-100, -30], opacity: [0, 1] }}

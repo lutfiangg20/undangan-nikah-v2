@@ -36,13 +36,13 @@ const GiftContent = () => {
   };
 
   return (
-    <div className="mt-20 space-y-2">
+    <div className="font-serif mt-20 space-y-2">
       <p className="text-center text-sm">
         Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika
         memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara
         cashless.
       </p>
-      <div className="relative">
+      <div className="font-sans relative">
         <img src={atm} />
         <div className="absolute bottom-6 left-2 ">
           <img className="w-20 h-14" src={chip} />
@@ -57,7 +57,7 @@ const GiftContent = () => {
           <Copy size={16} /> {copyRekUpi}
         </button>
       </div>
-      <div className="relative">
+      <div className="font-sans relative">
         <img src={atm} />
         <div className="absolute bottom-6 left-2 ">
           <img className="w-20 h-14" src={chip} />

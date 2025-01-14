@@ -6,7 +6,7 @@ import kanan from "/remini8kanan.jpg";
 
 const Mempelai = () => {
   return (
-    <div className="space-y-10 overflow-x-hidden mt-16">
+    <div className="font-serif space-y-10 overflow-x-hidden mt-16">
       <div className="w-full grid grid-cols-12 gap-5">
         <motion.div
           animate={{ x: [-100, 0], opacity: [0, 1] }}
@@ -24,7 +24,9 @@ const Mempelai = () => {
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="col-span-6"
         >
-          <h1 className="text-3xl font-bold">Lutfi Angga Hendrawan</h1>
+          <h1 className="text-3xl font-bold font-sans">
+            Lutfi Angga Hendrawan
+          </h1>
           <p>
             Putra Kedua dari Bapak Drs.H.Suwito(Alm) & Ibu Hj.Endang Harwenisya
             S.Pd
@@ -37,7 +39,7 @@ const Mempelai = () => {
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="col-span-6"
         >
-          <h1 className="text-3xl font-bold">Erlynda Sabirina</h1>
+          <h1 className="text-3xl font-bold font-sans">Erlynda Sabirina</h1>
 
           <p>Putri Kedua dari Bapak Agus Triyono & Ibu Enny Minarsih </p>
         </motion.div>

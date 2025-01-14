@@ -5,7 +5,7 @@ const OpeningContent = () => {
   const { id } = useParams();
   const newId = id?.replace(/-/g, " ");
   return (
-    <div className=" flex h-screen mt-52 justify-center">
+    <div className="font-serif flex h-screen mt-52 justify-center">
       <motion.div className="text-center space-y-5">
         <motion.h3
           animate={{ y: [-100, 0] }}
@@ -17,7 +17,7 @@ const OpeningContent = () => {
         <motion.h1
           animate={{ y: [100, 0] }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-          className="text-4xl"
+          className="text-4xl font-sans font-semibold"
         >
           Lutfi & Erlynda
         </motion.h1>
