@@ -1,7 +1,9 @@
+import { useImages } from "@/components/ImageProvider";
 import { motion } from "motion/react";
-import { fotos } from "./fotos";
+// import { fotos } from "./fotos";
 
 const Gallery = () => {
+  const { fotos } = useImages();
   return (
     <div className="relative h-screen flex items-center">
       <div className="absolute -inset-10 bg-black opacity-10  bg-[url('/remini1.jpg')] bg-cover" />

@@ -1,11 +1,9 @@
-import atm from "/atm.png";
-import chip from "/chip.png";
-import bca from "/bca.png";
-import bni from "/bni.svg";
+import { useImages } from "@/components/ImageProvider";
 import { Copy } from "lucide-react";
 import { useState } from "react";
 
 const GiftContent = () => {
+  const { bni, bca, atm, chip } = useImages();
   const rekUpi = "304537406";
   const rekLynda = "007940478612";
   const [copyRekUpi, setCopyRekUpi] = useState("Copy No. Rekening");

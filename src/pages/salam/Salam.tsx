@@ -1,7 +1,10 @@
+import { useImages } from "@/components/ImageProvider";
 import { motion } from "motion/react";
-import foto from "/remini4.jpg";
+// import foto from "/remini4.jpg";
 
 const Salam = () => {
+  const { foto } = useImages();
+
   return (
     <div className="font-serif flex justify-center">
       <div className="space-y-10 ">

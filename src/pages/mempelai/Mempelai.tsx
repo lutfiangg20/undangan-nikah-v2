@@ -1,10 +1,12 @@
 // import foto from "/remini1.jpg";
 // import foto2 from "/remini5.jpg";
 import { motion } from "motion/react";
-import kiri from "/remini8kiri.jpg";
-import kanan from "/remini8kanan.jpg";
+// import kiri from "/remini8kiri.jpg";
+// import kanan from "/remini8kanan.jpg";
+import { useImages } from "@/components/ImageProvider";
 
 const Mempelai = () => {
+  const { kiri, kanan } = useImages();
   return (
     <div className="font-serif space-y-10 overflow-x-hidden mt-16">
       <div className="w-full grid grid-cols-12 gap-5">
