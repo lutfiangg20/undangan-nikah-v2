@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { Pause, Play } from "lucide-react";
 
 const MusicPlayer = () => {
-  const audio = useMemo(() => new Audio("/undangan-nikah-v2/music.mp3"), []);
+  const audio = useMemo(() => new Audio("/music.mp3"), []);
   const [isPlaying, setIsPlaying] = useState(false);
   const playMusic = () => {
     if (isPlaying) {

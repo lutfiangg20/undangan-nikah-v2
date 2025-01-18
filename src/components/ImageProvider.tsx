@@ -8,12 +8,14 @@ import atm from "/atm.png";
 import chip from "/chip.png";
 import bca from "/bca.png";
 import bni from "/bni.svg";
+import fotoCrop from "/remini1crop2.jpg";
 
 type Props = {
   children: React.ReactNode;
 };
 
 const datas = {
+  fotoCrop,
   foto1,
   foto,
   kiri,
