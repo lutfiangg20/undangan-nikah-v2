@@ -2,9 +2,10 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { HashRouter, Route, Routes } from "react-router";
-import Opening from "./pages/opening.tsx";
+// import Opening from "./pages/opening.tsx";
 import { ThemeProvider } from "./components/ThemeProvider.tsx";
 import { createClient } from "@supabase/supabase-js";
+import OnePage from "./pages/OnePage.tsx";
 
 const SUPABASE_KEY =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVjamt6bGhoa290YXppand3a2ZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYwODg0MDEsImV4cCI6MjA1MTY2NDQwMX0.iZ1fg3zBQoFxBo450qiNXamQVH9WLE3GM40KlIWTcW0";
@@ -18,7 +19,8 @@ createRoot(document.getElementById("root")!).render(
       <div className="bg-[#f7ebd2] text-[#614306]">
         <HashRouter>
           <Routes>
-            <Route path="/:id" element={<Opening />} />
+            {/* <Route path="/:id" element={<Opening />} /> */}
+            <Route path="/:id" element={<OnePage />} />
             {/* <Route path="about" element={<About />} /> */}
 
             {/* <Route element={<MainLayout />}> */}

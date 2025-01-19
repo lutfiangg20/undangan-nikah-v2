@@ -97,7 +97,7 @@ const Wishes = () => {
   }, []);
 
   return (
-    <div className="mt-10 mb-32 p-2">
+    <div className="mt-10 mb-32 p-6">
       <h1 className="text-3xl text-center font-semibold">Wishes</h1>
       <p className="text-center font-serif mb-5">
         Berikan ucapan harapan dan do'a kepada kedua mempelai

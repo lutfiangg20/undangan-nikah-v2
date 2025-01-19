@@ -34,7 +34,7 @@ const GiftContent = () => {
   };
 
   return (
-    <div className="font-serif mt-20 space-y-2">
+    <div className="font-serif mt-20 p-4 space-y-2">
       <p className="text-center text-sm">
         Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika
         memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara

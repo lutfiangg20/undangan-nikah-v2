@@ -8,7 +8,7 @@ import { useImages } from "@/components/ImageProvider";
 const Mempelai = () => {
   const { kiri, kanan } = useImages();
   return (
-    <div className="font-serif space-y-10 overflow-x-hidden mt-16">
+    <div className="font-serif space-y-10 overflow-x-hidden mt-16 p-4">
       <div className="w-full grid grid-cols-12 gap-5">
         <motion.div
           animate={{ x: [-100, 0], opacity: [0, 1] }}

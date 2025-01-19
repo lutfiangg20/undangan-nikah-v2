@@ -6,6 +6,7 @@ import Maps from "@/pages/maps/Maps";
 import Mempelai from "@/pages/mempelai/Mempelai";
 import OpeningContent from "@/pages/OpeningContent";
 import Salam from "@/pages/salam/Salam";
+import TerimaKasih from "@/pages/terimakasih/TerimaKasih";
 import Wishes from "@/pages/wishes/Wishes";
 import {
   CalendarDays,
@@ -98,6 +99,6 @@ export const menuList: Path[] = [
     icon: <ScrollText strokeWidth={3} />,
     link: "/thanks",
 
-    component: <OpeningContent />,
+    component: <TerimaKasih />,
   },
 ];

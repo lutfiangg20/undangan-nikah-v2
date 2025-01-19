@@ -2,9 +2,9 @@ import { motion } from "motion/react";
 
 const Akad = () => {
   return (
-    <div className="font-serif relative overflow-y-hidden">
+    <div className="font-serif relative overflow-y-hidden ">
       <div className="absolute -inset-10 bg-black opacity-10  bg-[url('/remini1.jpg')] bg-cover" />
-      <div className="flex flex-col items-center space-y-10 h-screen justify-center">
+      <div className="flex flex-col items-center space-y-10 h-screen justify-center p-4">
         <motion.p
           animate={{ opacity: [0, 1], y: [-100, 0] }}
           transition={{ duration: 1.2, ease: "easeInOut" }}

@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const Counting = () => {
   return (
-    <div className="text-center px-10 mt-20 font-serif">
+    <div className="text-center px-10 mt-20 font-serif p-4">
       <motion.h1
         animate={{ y: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 2, ease: "easeInOut", type: "spring" }}

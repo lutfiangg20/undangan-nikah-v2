@@ -9,7 +9,7 @@ const Salam = () => {
     <div className="font-serif flex justify-center">
       <div className="space-y-10 ">
         <motion.div
-          animate={{ y: [-100, -30], opacity: [0, 1] }}
+          animate={{ y: [-100, -10], opacity: [0, 1] }}
           transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
           exit={{ opacity: 0, y: -100 }}
           className=" w-80 mx-auto overflow-hidden rounded-b-full ring-2 ring-offset-4 ring-offset-black ring-yellow-100"

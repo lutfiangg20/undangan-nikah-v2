@@ -25,7 +25,7 @@ const OpeningContent = () => {
         <motion.h3
           animate={{ y: [-100, 0] }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-          className="text-2xl"
+          className="text-xl"
         >
           Wedding Invitation
         </motion.h3>
@@ -40,8 +40,8 @@ const OpeningContent = () => {
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
         >
-          <h3 className="text-2xl">Kepada Yth:</h3>
-          <h3 className="text-2xl">Bapak/Ibu/Saudara/i</h3>
+          <h3 className="">Kepada Yth:</h3>
+          <h3 className="">Bapak/Ibu/Saudara/i</h3>
         </motion.div>
         <motion.h2
           animate={{ y: [100, 0] }}
