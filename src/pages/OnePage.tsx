@@ -46,7 +46,7 @@ const OnePage = () => {
             {visibleIndexes.includes(index) && (
               <NewMainLayout key={index}>
                 <div className="w-full">
-                  <MainContent children={path.component} />;
+                  <MainContent children={path.component} />
                 </div>
               </NewMainLayout>
             )}
