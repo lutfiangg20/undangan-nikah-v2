@@ -7,6 +7,7 @@ import { fotos } from "@/pages/gallery/fotos";
 import atm from "/atm.png";
 import chip from "/chip.png";
 import bca from "/bca.png";
+import mandiri from "/mandiri.png";
 import bni from "/bni.svg";
 import fotoCrop from "/remini1crop2.jpg";
 
@@ -25,6 +26,7 @@ const datas = {
   chip,
   bca,
   bni,
+  mandiri,
 };
 
 const ImageContext = createContext<typeof datas | null>(null);

@@ -17,7 +17,7 @@ const OpeningContent = () => {
         >
           <motion.img
             src={fotoCrop}
-            className="ring-black ring-2 size-52 object-cover object-top rounded-full"
+            className="ring-black ring-2 size-52 object-cover object-[50%_20%] rounded-full"
           />
         </motion.div>
       </div>
