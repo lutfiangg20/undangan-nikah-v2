@@ -42,9 +42,10 @@ const OnePage = () => {
             className="observer-item"
             data-index={index}
             style={{ minHeight: "500px", marginBottom: "0px" }}
+            key={index}
           >
             {visibleIndexes.includes(index) && (
-              <NewMainLayout key={index}>
+              <NewMainLayout>
                 <div className="w-full">
                   <MainContent children={path.component} />
                 </div>
