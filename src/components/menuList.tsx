@@ -28,12 +28,12 @@ export type Path = {
 };
 
 export const menuList: Path[] = [
-  {
-    name: "Opening",
-    icon: <ScrollText strokeWidth={3} />,
-    link: "/:id",
-    component: <OpeningContent />,
-  },
+  // {
+  //   name: "Opening",
+  //   icon: <ScrollText strokeWidth={3} />,
+  //   link: "/:id",
+  //   component: <OpeningContent />,
+  // },
   {
     name: "Salam",
     icon: <ScrollText strokeWidth={3} />,

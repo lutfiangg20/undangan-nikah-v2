@@ -1,13 +1,35 @@
 import { useImages } from "@/components/ImageProvider";
+import { useMusic } from "@/components/MusicPlayer";
+import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
+import { useState } from "react";
 import { useParams } from "react-router";
+import { create } from "zustand";
+
+interface UndanganState {
+  open: boolean;
+  setOpen: (state: boolean) => void;
+}
+
+export const useUndangan = create<UndanganState>((set) => ({
+  open: false,
+  setOpen: (state) => set({ open: state }),
+}));
 
 const OpeningContent = () => {
   const { id } = useParams();
   const newId = id?.replace(/-/g, " ");
   const { fotoCrop } = useImages();
+  const { setIsPlaying } = useMusic();
+  // const [open, setOpen] = useState(false);
+  const { setOpen } = useUndangan();
+
+  const handleBukaUndangan = () => {
+    setOpen(true);
+    setIsPlaying(true);
+  };
   return (
-    <div className="font-serif  h-screen mt-16 space-y-10 ">
+    <motion.div className={`font-serif h-screen mt-16 space-y-10 `}>
       <div className="flex justify-center">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
@@ -32,7 +54,7 @@ const OpeningContent = () => {
         <motion.h1
           animate={{ y: [100, 0] }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-          className="text-4xl font-sans font-semibold"
+          className="text-3xl font-serif font-medium italic"
         >
           Lutfi & Erlynda
         </motion.h1>
@@ -46,12 +68,18 @@ const OpeningContent = () => {
         <motion.h2
           animate={{ y: [100, 0] }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-          className="text-3xl capitalize"
+          className="text-2xl capitalize"
         >
           {newId}
         </motion.h2>
+        <Button
+          className="rounded-full bg-yellow-900 hover:bg-yellow-800"
+          onClick={handleBukaUndangan}
+        >
+          Buka Undangan
+        </Button>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

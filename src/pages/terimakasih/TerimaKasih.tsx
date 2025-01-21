@@ -38,7 +38,7 @@ const TerimaKasih = () => {
           <motion.h1
             animate={{ y: [100, 0] }}
             transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-            className="text-4xl font-sans font-semibold"
+            className="text-2xl font-sans font-semibold"
           >
             Lutfi & Erlynda
           </motion.h1>
