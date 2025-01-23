@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { Button } from "./ui/button";
 import { Pause, Play } from "lucide-react";
 import { create } from "zustand";

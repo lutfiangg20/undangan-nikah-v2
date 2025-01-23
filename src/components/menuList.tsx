@@ -4,7 +4,6 @@ import Gallery from "@/pages/gallery/Gallery";
 import GiftContent from "@/pages/gift/GiftContent";
 import Maps from "@/pages/maps/Maps";
 import Mempelai from "@/pages/mempelai/Mempelai";
-import OpeningContent from "@/pages/OpeningContent";
 import Salam from "@/pages/salam/Salam";
 import TerimaKasih from "@/pages/terimakasih/TerimaKasih";
 import Wishes from "@/pages/wishes/Wishes";

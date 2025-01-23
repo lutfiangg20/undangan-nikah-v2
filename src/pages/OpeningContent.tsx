@@ -2,7 +2,6 @@ import { useImages } from "@/components/ImageProvider";
 import { useMusic } from "@/components/MusicPlayer";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
-import { useState } from "react";
 import { useParams } from "react-router";
 import { create } from "zustand";
 
